@@ -1,5 +1,5 @@
 {
-  "name": "timer",
+  "name": "timmer",
   "main": "index.js",
   "version": "0.1.0",
   "private": false,
@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "rimraf -rf dist && mkdir dist &&  babel src/components -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
