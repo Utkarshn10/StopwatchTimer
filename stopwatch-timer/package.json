@@ -1,16 +1,15 @@
 {
-  "name": "stopwatch-timer",
+  "name": "timer",
   "main": "index.js",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,6 +23,9 @@
       "react-app/jest"
     ]
   },
+  "author": {
+    "name": "Utkarsh Nagar"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,5 +37,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "babel": { 
+  "presets": [
+    "@babel/preset-react"
+  ]
   }
 }

@@ -1,8 +1,7 @@
-import { useState, useRef,useContext } from 'react';
-import {MyContext} from "../../context"
+import { useState, useRef} from 'react';
 
 const useTimer = (initialState = 0) => {
-  const {timer, setTimer} = useContext(MyContext);
+  const [timer, setTimer] = useState(0);
   const [timerActive, setTimerActive] = useState(false)
   const [timerPaused, setTimerPaused] = useState(false)
   const countRef = useRef(null)
